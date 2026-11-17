@@ -26,10 +26,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My function name, and why return rather than print:
+# 1. In: A list of drink names and a letter to search for.
+# 2. Process: The function checks each drink and counts how many contain the given letter.
+# 3. Out: The number of drink names containing that letter.
+# 4. My function name is count_drinks_with_letter. I use return rather than print so the result can be reused in other calculations or stored in a variable.
 
 
 # Your code below

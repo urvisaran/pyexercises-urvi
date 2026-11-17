@@ -187,3 +187,25 @@ print(message)  # Should print "Hello, alpha"
 ```
 
 What is the name of the parameter in this function?
+
+---
+## 2026-11-17 13:19, in .
+
+**Me:** can i call a function inside another function?
+
+**Tutor:**
+
+Yes, you can call a function inside another function.
+This is called nesting functions.
+
+```python
+def outer():
+    # TODO: call inner() here
+    print("Outer function")
+
+# --- cut by the tutor: One function per answer. The next one is yours to write ---
+```
+
+What is the name of the function that is called inside another function?
+
+*Cut by the tutor: One function per answer. The next one is yours to write.*
