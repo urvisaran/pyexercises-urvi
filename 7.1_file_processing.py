@@ -37,15 +37,39 @@ DELIVERABLE
 """
 
 # What is wrong with names.txt (found by reading it, not by guessing):
-# -
-# -
-# -
-# -
+# - Some names have inconsistent capitalisation.
+# - Some lines have leading spaces.
+# - There are blank lines between some names.
+# - Some names have first and last names with different capitalisation.
 
 # 1. In:
-# 2. Process, problem by problem:
-# 3. Out:
-# 4. How I decide which word is the last name:
+# A text file containing people's first and last names, one person per line.
 
+# 2. Process, problem by problem:
+# - Convert names to consistent capitalisation using title case.
+# - Remove leading and trailing spaces from each line.
+# - Remove blank lines.
+# - Split each name into first name and last name so it can be sorted by last name.
+
+# 3. Out:
+# A new text file containing cleaned names, sorted alphabetically by last name.
+
+# 4. How I decide which word is the last name:
+# The second word on each line is treated as the last name.
 
 # Your code below
+names = []
+
+with open("names.txt", "r") as file:
+    for line in file:
+        name = line.strip()
+
+        if name != "":
+            name = name.title()
+            names.append(name)
+
+names.sort(key=lambda name: name.split()[1])
+
+with open("cleaned_names.txt", "w") as file:
+    for name in names:
+        file.write(name + "\n")

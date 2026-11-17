@@ -218,3 +218,12 @@ What is the name of the function that is called inside another function?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-17 16:00, in .
+
+**Me:** how can i create a new txt file?
+
+**Tutor:**
+
+Refused, off topic.
