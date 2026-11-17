@@ -166,3 +166,24 @@ print("Steps taken:", steps)
 ```
 
 What is the name of the operator that checks if one number is greater than or equal to another?
+
+---
+## 2026-11-17 13:00, in .
+
+**Me:** How does a function work?
+
+**Tutor:**
+
+A function is a reusable block of code that performs a single task.
+
+```python
+def greet(name):
+    # TODO: return the string "Hello, " followed by the value of name
+    pass
+
+# Example call
+message = greet("alpha")
+print(message)  # Should print "Hello, alpha"
+```
+
+What is the name of the parameter in this function?
