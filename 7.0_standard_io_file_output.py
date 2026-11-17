@@ -29,49 +29,39 @@ DELIVERABLE
     This file, plus the CSV your program produced.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out, file name and columns:
-# 4. Why these columns, and what this file is for:
 
-
-# Your code below
-# 1. In: Drink name, category, price and date entered by the user.
-# 2. Process: Collect the details, check that the price is valid,
-#    and add the entry to the CSV file.
-# 3. Out: drinks_log.csv with columns Drink, Category, Price and Date.
-# 4. I chose these columns to keep track of drinks, their costs and purchase dates.
-#    After 200 rows, I could analyse spending and see which drinks I buy most often.
+# 1. In: First name, last name, email and student number.
+# 2. Process: Ask the user for each detail and check that none are empty.
+# 3. Out: 7.0_student_data.csv with four columns:
+#    first_name, last_name, email, student_number.
+# 4. I chose these columns to maintain a student record.
+#    With 200 rows, I could organise students or analyse the data.
 
 import pandas as pd
 import os
 
-df = "drinks_log.csv"
+filename = "7.0_student_data.csv"
 
-drink = input("Enter drink name: ")
-category = input("Enter drink category: ")
-price = input("Enter price: ")
-date = input("Enter date (DD/MM/YYYY): ")
+first_name = input("Enter first name: ").strip()
+last_name = input("Enter last name: ").strip()
+email = input("Enter email: ").strip()
+student_number = input("Enter student number: ").strip()
 
-# Check that price is a valid number
-while True:
-    try:
-        price = float(price)
-        if price < 0:
-            raise ValueError
-        break
-    except ValueError:
-        price = input("Enter a valid positive price: ")
+while not first_name or not last_name or not email or not student_number:
+    print("All fields are required.")
+    first_name = input("Enter first name: ").strip()
+    last_name = input("Enter last name: ").strip()
+    email = input("Enter email: ").strip()
+    student_number = input("Enter student number: ").strip()
 
-# Create a new entry
-new_entry = pd.DataFrame({
-    "Drink": [drink],
-    "Category": [category],
-    "Price": [price],
-    "Date": [date]
+new_student = pd.DataFrame({
+    "first_name": [first_name],
+    "last_name": [last_name],
+    "email": [email],
+    "student_number": [student_number]
 })
 
-# Add entry without overwriting previous entries
-new_entry.to_csv(df, mode="a", header=not os.path.exists(df), index=False)
+new_student.to_csv(filename, mode="a", header=not os.path.exists(filename) or os.path.getsize(filename) == 0, index=False)
 
-print("Entry saved successfully!")
+print("Student record saved!")
+

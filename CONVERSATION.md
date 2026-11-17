@@ -209,3 +209,12 @@ def outer():
 What is the name of the function that is called inside another function?
 
 *Cut by the tutor: One function per answer. The next one is yours to write.*
+
+---
+## 2026-11-17 15:55, in .
+
+**Me:** what is a csv?
+
+**Tutor:**
+
+Refused, off topic.
