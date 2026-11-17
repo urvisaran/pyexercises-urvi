@@ -245,3 +245,29 @@ result = alpha + beta
 ```
 
 What is the name of the operator that multiplies two numbers?
+
+---
+## 2026-11-17 16:08, in .
+
+**Me:** what is a bin in python?
+
+**Tutor:**
+
+A bin is a container that groups continuous numeric data into discrete intervals.
+
+```python
+import numpy as np
+
+# TODO: choose the edges of the bins
+bins = [0, 10, 20, 30]
+
+# TODO: create some fake data
+data = np.array([5, 12, 18, 25, 32])
+
+# TODO: use np.digitize to assign each value to a bin
+bin_indices = np.digitize(data, bins)
+
+print(bin_indices)  # e.g. [1 2 2 3 4]
+```
+
+Which function in numpy takes the data and the bin edges as arguments?
