@@ -28,12 +28,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. Input: A list of drink names.
-# 2. Process: One function counts drinks, one calculates total name length,
-#    and one calculates average name length.
-# 3. Output: The number of drinks longer than the average.
-# 4. The fourth function answers how many drink names are above average.
-#    Splitting makes each calculation easier to test separately.
+# 1. In: A list of drink names.
+# 2. Process: Count the drinks, find the longest name, and find the shortest name.
+# 3. Out: The number of drinks, the longest name length, the shortest name length, and a comparison.
+# 4. My fourth function is compare_drink_names. It uses the first three functions to compare the number of drinks with the length of the longest name. I use return instead of print so the results can be reused in other functions.
 
 
 # Your code below
