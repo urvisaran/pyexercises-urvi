@@ -227,3 +227,21 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-17 16:06, in .
+
+**Me:** what is an operator in python?
+
+**Tutor:**
+
+An operator is a symbol that performs an operation on one or more values.
+
+Example: the arithmetic operator `+` adds two numbers.
+
+```python
+# TODO: replace alpha and beta with your own numbers
+result = alpha + beta
+```
+
+What is the name of the operator that multiplies two numbers?
